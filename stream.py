@@ -11,7 +11,7 @@ from sklearn.linear_model import LogisticRegression
 import nltk
 
 nltk.download('stopwords')
-
+nltk.download('wordnet')
 
 @st.cache_resource
 def load_model_vectorizer():
