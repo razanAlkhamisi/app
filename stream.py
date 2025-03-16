@@ -8,6 +8,11 @@ from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 
+import nltk
+
+nltk.download('stopwords')
+
+
 @st.cache_resource
 def load_model_vectorizer():
     try:
